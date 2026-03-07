@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Personal Profile</title>
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
+  <style>
+    :root {
+      --primary-color: #2c3e50;
+      --accent-color: #3498db;
+      --light-bg: #f4f6f9;
+      --card-bg: #ffffff;
+    }
+
+    body {
+      background-color: var(--light-bg);
+      color: var(--primary-color);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    /* ── Header ── */
+    header {
+      background-color: var(--primary-color);
+      color: #ffffff;
+      padding: 3rem 1rem 2rem;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+    }
+
+    header p.title {
+      font-size: 1.2rem;
+      opacity: 0.85;
+      margin-bottom: 0;
+    }
+
+    /* ── Sections ── */
+    section {
+      padding: 2.5rem 0;
+    }
+
+    .section-title {
+      font-size: 1.6rem;
+      font-weight: 600;
+      color: var(--accent-color);
+      border-bottom: 2px solid var(--accent-color);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* ── Cards ── */
+    .card {
+      border: none;
+      border-radius: 0.75rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+      background-color: var(--card-bg);
+    }
+
+    /* ── Personal Data ── */
+    .data-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+    }
+
+    .data-label {
+      font-weight: 600;
+      min-width: 130px;
+      color: var(--accent-color);
+    }
+
+    /* ── Interests ── */
+    .interest-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background-color: var(--primary-color);
+      color: #fff;
+      border-radius: 2rem;
+      padding: 0.4rem 1rem;
+      font-size: 0.9rem;
+      margin: 0.3rem;
+    }
+
+    /* ── Skills ── */
+    .skill-name {
+      font-weight: 600;
+      margin-bottom: 0.25rem;
+    }
+
+    .progress {
+      height: 10px;
+      border-radius: 5px;
+    }
+
+    .progress-bar {
+      background-color: var(--accent-color);
+      border-radius: 5px;
+    }
+
+    /* ── Contact ── */
+    .contact-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.75rem;
+      font-size: 1rem;
+    }
+
+    .contact-item a {
+      color: var(--primary-color);
+      text-decoration: none;
+    }
+
+    .contact-item a:hover {
+      color: var(--accent-color);
+      text-decoration: underline;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background-color: var(--primary-color);
+      color: rgba(255, 255, 255, 0.7);
+      text-align: center;
+      padding: 1.2rem;
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ═══ HEADER ═══ -->
+  <header>
+    <div class="container">
+      <h1>Carlos Sif</h1>
+      <p class="title">Computer Science Student &amp; Aspiring Developer</p>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- ═══ PERSONAL PROFILE ═══ -->
+    <section id="profile">
+      <h2 class="section-title">About Me</h2>
+      <div class="card p-4">
+        <p>
+          Hi! I'm Carlos, a passionate Computer Science student with a strong interest in
+          software development, open-source collaboration, and emerging technologies.
+          I enjoy building projects that solve real-world problems and am always looking
+          for opportunities to learn and grow as a developer.
+        </p>
+        <p class="mb-0">
+          I'm currently exploring web development, data structures, and algorithms while
+          working on personal projects to build my portfolio. I believe in writing clean,
+          readable code and collaborating effectively with teams.
+        </p>
+      </div>
+    </section>
+
+    <!-- ═══ PERSONAL DATA ═══ -->
+    <section id="personal-data">
+      <h2 class="section-title">Personal Data</h2>
+      <div class="card p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="data-item">
+              <span class="data-label">Full Name:</span>
+              <span>Carlos Sif</span>
+            </div>
+            <div class="data-item">
+              <span class="data-label">Date of Birth:</span>
+              <span>January 1, 2000</span>
+            </div>
+            <div class="data-item">
+              <span class="data-label">Location:</span>
+              <span>San Francisco, CA, USA</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="data-item">
+              <span class="data-label">Degree:</span>
+              <span>B.Sc. Computer Science</span>
+            </div>
+            <div class="data-item">
+              <span class="data-label">University:</span>
+              <span>State University</span>
+            </div>
+            <div class="data-item">
+              <span class="data-label">Languages:</span>
+              <span>English (native), Spanish (intermediate)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ INTERESTS ═══ -->
+    <section id="interests">
+      <h2 class="section-title">Interests</h2>
+      <div class="card p-4">
+        <div class="d-flex flex-wrap">
+          <span class="interest-badge">💻 Web Development</span>
+          <span class="interest-badge">🤖 Artificial Intelligence</span>
+          <span class="interest-badge">📊 Data Science</span>
+          <span class="interest-badge">🔒 Cybersecurity</span>
+          <span class="interest-badge">📱 Mobile Apps</span>
+          <span class="interest-badge">🎮 Game Development</span>
+          <span class="interest-badge">📖 Open Source</span>
+          <span class="interest-badge">☁️ Cloud Computing</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ SKILLS ═══ -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="card p-4">
+        <div class="row g-4">
+          <div class="col-md-6">
+            <div class="skill-name">HTML &amp; CSS</div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 85%"
+                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="skill-name">JavaScript</div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 75%"
+                aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="skill-name">Python</div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 80%"
+                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="skill-name">Git &amp; GitHub</div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 90%"
+                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="skill-name">SQL</div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 65%"
+                aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+
+            <div class="skill-name">Java</div>
+            <div class="progress mb-3">
+              <div class="progress-bar" role="progressbar" style="width: 60%"
+                aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══ CONTACT ═══ -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <div class="card p-4">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="contact-item">
+              <span>📧</span>
+              <a href="mailto:carlos.sif@example.com">carlos.sif@example.com</a>
+            </div>
+            <div class="contact-item">
+              <span>📱</span>
+              <span>+1 (555) 000-0000</span>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="contact-item">
+              <span>🐙</span>
+              <a href="https://github.com/carlos-sif" target="_blank" rel="noopener noreferrer">
+                github.com/carlos-sif
+              </a>
+            </div>
+            <div class="contact-item">
+              <span>💼</span>
+              <a href="https://linkedin.com/in/carlossif" target="_blank" rel="noopener noreferrer">
+                linkedin.com/in/carlossif
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer>
+    <p class="mb-0">&copy; 2025 Carlos Sif &mdash; Personal Profile Page</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
+</body>
+</html>
